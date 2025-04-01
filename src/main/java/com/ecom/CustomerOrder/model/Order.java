@@ -7,11 +7,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 @Table(name = "customer_order")
 public class Order {
     @Id
@@ -26,3 +26,5 @@ public class Order {
     @JsonBackReference
     private com.ecom.CustomerOrder.model.Customer customer;
 }
+
+
